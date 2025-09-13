@@ -1,9 +1,33 @@
+/**
+ * Main Application Component
+ * 
+ * This is the root component of the College Portal application that provides
+ * a navigation interface to switch between Admin and Student views.
+ * 
+ * Features:
+ * - Navigation bar with view switching buttons
+ * - Conditional rendering of AdminDashboard or StudentView
+ * - Responsive design with Tailwind CSS
+ * 
+ * @component
+ * @author College Portal Team
+ */
+
 import { useState } from 'react';
 import AdminDashboard from './components/AdminDashboard';
 import StudentView from './components/StudentView';
 
+/**
+ * App Component - Main application entry point
+ * 
+ * Manages the global view state and renders the appropriate component
+ * based on user selection (Admin or Student view).
+ * 
+ * @returns {JSX.Element} The main application layout with navigation
+ */
 function App() {
-  const [view, setView] = useState('admin'); // 'admin' or 'student'
+  // State to track current view mode - either 'admin' for administrative functions or 'student' for read-only view
+  const [view, setView] = useState('admin');
 
   return (
     <div className="min-h-screen bg-gray-100">

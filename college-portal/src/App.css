@@ -40,3 +40,41 @@
 .read-the-docs {
   color: #888;
 }
+
+/* small helpers to make the editor card look like the screenshot */
+.editor-card {
+  @apply bg-white rounded-2xl shadow-sm border p-4;
+}
+
+.sidebar-item-active {
+  @apply bg-blue-500 text-white;
+}
+
+/* make CKEditor iframe / editing area fill available height */
+.ck-editor-container {
+  min-height: 360px;
+}
+
+/* responsive tweaks */
+@media (max-width: 768px) {
+  .ck-editor-container { min-height: 260px; }
+}
+
+/* Custom table styles for prose content */
+.prose table {
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-collapse: collapse;
+  border: 1px solid #e5e7eb;
+}
+.prose th,
+.prose td {
+  border: 1px solid #e5e7eb;
+  padding: 0.5rem 1rem;
+  text-align: left;
+}
+.prose th {
+  background-color: #f9fafb;
+  font-weight: 600;
+}
