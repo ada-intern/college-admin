@@ -1,0 +1,40 @@
+{
+  "name": "33d537c19991658e5431c3c92304c73680cb6652740e2ced427a1413f1e56ec4",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@kombai/react-error-boundary": "^1.1.0",
+    "@tailwindcss/postcss": "^4.1.13",
+    "date-fns": "^4.1.0",
+    "postcss": "^8.5.6",
+    "postcss-import": "^16.1.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "tailwindcss": "^4.1.13"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.21.0",
+    "@tailwindcss/vite": "^4.1.13",
+    "@types/node": "^24.3.3",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "@vitejs/plugin-react": "^4.7.0",
+    "comment-json": "^4.2.5",
+    "env-cmd": "^11.0.0",
+    "eslint": "^9.21.0",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "eslint-plugin-react-refresh": "^0.4.19",
+    "globals": "^15.15.0",
+    "rollup": "^4.44.1",
+    "vite": "^6.2.0",
+    "vite-plugin-static-copy": "^3.1.2"
+  },
+  "strictDependencies": {}
+}

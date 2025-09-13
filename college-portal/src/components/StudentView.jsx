@@ -29,6 +29,7 @@ import DOMPurify from "dompurify";
 import ReactMarkdown from "react-markdown";
 import CollegeSelector from "./CollegeSelector";
 import Tabs from "./Tabs";
+import StudentSidebar from "./StudentSidebar";
 import { getCollegeById, TABS_CONFIG } from "../data";
 
 /**
@@ -130,41 +131,7 @@ const StudentView = () => {
           </div>
 
           {/* Sidebar */}
-          <aside className="space-y-6">
-            <div className="bg-white shadow rounded-lg p-6">
-              <h2 className="font-semibold text-gray-700 mb-4">
-                Our Top Recruiters
-              </h2>
-              <div className="grid grid-cols-2 gap-4">
-                {["google", "amazon", "honeywell", "ford"].map((logo) => (
-                  <img
-                    key={logo}
-                    src={`/${logo}.png`}
-                    alt={logo}
-                    className="h-10 object-contain"
-                  />
-                ))}
-              </div>
-            </div>
-
-            <div className="bg-white shadow rounded-lg p-6">
-              <h2 className="font-semibold text-gray-700 mb-4">
-                Contact Information
-              </h2>
-              <p className="text-sm text-gray-600">
-                <strong>Phone:</strong> +1 617-253-1000
-              </p>
-              <p className="text-sm text-gray-600">
-                <strong>Email:</strong> admissions@mit.edu
-              </p>
-              <p className="text-sm text-gray-600">
-                <strong>Address:</strong> 77 Massachusetts Ave, Cambridge, MA
-              </p>
-              <button className="mt-3 px-4 py-2 bg-indigo-600 text-white rounded-lg text-sm hover:bg-indigo-700">
-                View on Map
-              </button>
-            </div>
-          </aside>
+          <StudentSidebar />
         </div>
       )}
     </div>
